@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transaction"
+    android:orientation="vertical"
+    android:background="#000957"
+    android:layout_gravity="center">
+
+    <!--        헤더-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:text="←"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--            프로필 -->
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/activity_circle"
+                    android:elevation="100dp"
+                    android:padding="10dp"
+                    android:src="@drawable/profile" />
+
+                <!--        바탕 프레임-->
+                <FrameLayout
+                    android:layout_width="290dp"
+                    android:layout_height="309dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-38dp"
+                    android:background="@drawable/activity_radius"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/activity_circle"
+                        android:backgroundTint="#00ff0000"
+                        android:padding="20dp"
+                        android:src="@drawable/moon"
+                        android:text="달" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="48dp"
+                        android:text="저금통 이름"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+
+                <!--        바탕 프레임-->
+                <FrameLayout
+                    android:layout_width="290dp"
+                    android:layout_height="309dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-38dp"
+                    android:background="@drawable/activity_radius"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="48dp"
+                        android:text="저금통 이름"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

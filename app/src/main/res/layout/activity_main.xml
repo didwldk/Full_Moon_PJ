@@ -1,18 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000957">
 
-    <TextView
+    <!--Header    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:text=" "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--몇 퍼센트 달성 되었는지 띄우는 달    -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!--        저금통 프로필 이미지 버튼-->
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/activity_circle"
+            android:padding="16dp"
+            android:src="@drawable/profile"
+            android:elevation="100dp"/>
+
+        <!--        바탕 프레임-->
+        <FrameLayout
+            android:layout_width="290dp"
+            android:layout_height="401dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/activity_radius"
+            android:orientation="vertical">
+
+            <!--            저금통 이름-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:text="저금통 이름"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <!--            퍼센트 띄우는 달 이미지 버튼-->
+
+            <!--            목표 금액-->
+
+            <ImageButton
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/activity_circle"
+                android:backgroundTint="#00ff0000"
+                android:padding="30dp"
+                android:src="@drawable/moon"
+                android:text="달" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="300dp"
+                android:text="목표 금액 : 700,000"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+
+            <!--            현재 금액-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="340dp"
+                android:text="현재 금액 : 140,000"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--채우기, 꺼내기 버튼-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="294dp"
+            android:layout_height="68dp"
+            android:text="채우기"
+            android:textSize="20dp"
+            android:backgroundTint="#FFF974"
+            android:textColor="#000"/>
+
+        <Button
+            android:layout_width="294dp"
+            android:layout_height="68dp"
+            android:text="꺼내기"
+            android:textSize="20dp"
+            android:backgroundTint="#6179CD"
+            android:textColor="#000"/>
+    </LinearLayout>
+</LinearLayout>

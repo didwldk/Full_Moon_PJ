@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ANDROID_PJ">
         <activity
+            android:name=".Transaction"
+            android:exported="false" />
+        <activity
+            android:name=".Start_screen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -15,6 +15,7 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/back_btn"
             android:layout_width="68dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#00000000"
@@ -60,6 +61,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/moon_btn_back"
                         android:layout_width="230dp"
                         android:layout_height="230dp"
                         android:layout_gravity="center"

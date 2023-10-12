@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_screen);
+        setContentView(R.layout.activity_main);
         setTitle("시작 설정 화면");
 
         photo_btn = findViewById(R.id.photo_btn);
@@ -25,20 +25,22 @@ public class MainActivity extends AppCompatActivity {
         max_edt = findViewById(R.id.max_edt);
 
         // 저금통 사진 넣고 완료
-        photo_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+//        photo_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
 
         // 저금통 제목 넣고 완료
-        title_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+//        title_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, Start_screen.class);
+//                intent.putExtra("제목: ",title_edt.getText().toString());
+//                startActivity(intent);
+//            }
+//        });
 
         // 저금통 시작하기 버튼 - 누르면 activity_main.xml로 넘어감
         start_btn.setOnClickListener(new View.OnClickListener() {

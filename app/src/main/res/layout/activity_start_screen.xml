@@ -24,14 +24,13 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:background="@drawable/activity_circle"
-            android:padding="16dp"
             android:src="@drawable/profile"
             android:elevation="100dp"/>
 
         <!--        바탕 프레임-->
         <FrameLayout
             android:layout_width="290dp"
-            android:layout_height="401dp"
+            android:layout_height="373dp"
             android:layout_gravity="center"
             android:layout_marginTop="-38dp"
             android:background="@drawable/activity_radius"
@@ -45,7 +44,7 @@
                 android:layout_marginTop="45dp"
                 android:text="저금통 이름"
                 android:textColor="#000000"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <!--            퍼센트 띄우는 달 이미지 버튼-->
@@ -57,7 +56,7 @@
                 android:layout_width="230dp"
                 android:layout_height="230dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="-10dp"
+                android:layout_marginTop="-8dp"
                 android:background="@drawable/activity_circle"
                 android:backgroundTint="#00ff0000"
                 android:padding="30dp"
@@ -68,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="290dp"
                 android:text="목표 금액 : 700,000"
                 android:textColor="#000000"
                 android:textSize="23dp" />
@@ -78,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="340dp"
+                android:layout_marginTop="321dp"
                 android:text="현재 금액 : 140,000"
                 android:textColor="#000000"
                 android:textSize="23dp" />
@@ -90,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <Button

@@ -19,7 +19,6 @@ public class Transaction extends AppCompatActivity {
         setContentView(R.layout.activity_transaction);
 
         back_btn = findViewById(R.id.back_btn);
-        title_txt = findViewById(R.id.title_txt);
 
         back_btn.setOnClickListener(new View.OnClickListener() {
             @Override

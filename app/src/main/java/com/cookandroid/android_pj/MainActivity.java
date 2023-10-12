@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle("시작 설정 화면");
 
-        photo_btn = findViewById(R.id.photo_btn);
         title_btn = findViewById(R.id.title_btn);
         start_btn = findViewById(R.id.start_btn);
         title_edt = findViewById(R.id.title_edt);

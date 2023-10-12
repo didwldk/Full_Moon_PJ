@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,149 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center"
     android:background="#000957">
+    <!-- Test-->
 
-
+    <!--몇 퍼센트 달성 되었는지 띄우는 달    -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
 
-        <Button
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00000000"
-            android:text=" "
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+        <!--        저금통 프로필 이미지 버튼-->
+        <ImageButton
+            android:id="@+id/img_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/activity_circle"
+            android:padding="16dp"
+            android:src="@drawable/profile"
+            android:elevation="100dp"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="100dp"
-            android:gravity="center"
+        <!--        바탕 프레임-->
+        <FrameLayout
+            android:layout_width="290dp"
+            android:layout_height="401dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/activity_radius"
             android:orientation="vertical">
 
-            <LinearLayout
+            <!--            저금통 이름-->
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="100dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:text="저금통 이름"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_marginBottom="30dp"
-                    android:background="@drawable/activity_radius"
-                    android:gravity="center"
-                    android:orientation="vertical">
+            <!--            퍼센트 띄우는 달 이미지 버튼-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="30dp"
-                        android:gravity="top"
-                        android:text="1. 사진을 넣어주세요"
-                        android:textColor="@color/black"
-                        android:textSize="20dp" />
+            <!--            목표 금액-->
 
-                </LinearLayout>
+            <ImageButton
+                android:id="@+id/moon_btn"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/activity_circle"
+                android:backgroundTint="#00ff0000"
+                android:padding="30dp"
+                android:src="@drawable/moon"
+                android:text="달" />
 
-                <Button
-                    android:id="@+id/photo_btn"
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#577BC1"
-                    android:text="완료" />
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="100dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="300dp"
+                android:text="목표 금액 : 700,000"
+                android:textColor="#000000"
+                android:textSize="23dp" />
 
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_marginBottom="30dp"
-                    android:background="@drawable/activity_radius"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="30dp"
-                        android:gravity="top"
-                        android:text="2. 제목을 입력해주세요"
-                        android:textColor="@color/black"
-                        android:textSize="20dp" />
-
-                    <EditText
-                        android:id="@+id/title_edt"
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:hint="이곳에 작성해주세요" />
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/title_btn"
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#577BC1"
-                    android:text="완료" />
-            </LinearLayout>
-
-            <LinearLayout
+            <!--            현재 금액-->
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="100dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="340dp"
+                android:text="현재 금액 : 140,000"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+        </FrameLayout>
+    </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_marginBottom="30dp"
-                    android:background="@drawable/activity_radius"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    >
+    <!--채우기, 꺼내기 버튼-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="30dp"
-                        android:gravity="top"
-                        android:text="3. 목표 금액을 작성해주세요"
-                        android:textColor="@color/black"
-                        android:textSize="20dp" />
+        <Button
+            android:id="@+id/push_btn"
+            android:layout_width="294dp"
+            android:layout_height="68dp"
+            android:text="채우기"
+            android:textSize="20dp"
+            android:backgroundTint="#FFF974"
+            android:textColor="#000"/>
 
-                    <EditText
-                        android:id="@+id/max_edt"
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:hint="이곳에 작성해주세요"
-                        android:inputType="number" />
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/start_btn"
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#FFF974"
-                    android:text="시작하기"
-                    android:textColor="#000000" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-
+        <Button
+            android:id="@+id/pull_btn"
+            android:layout_width="294dp"
+            android:layout_height="68dp"
+            android:text="꺼내기"
+            android:textSize="20dp"
+            android:backgroundTint="#6179CD"
+            android:textColor="#000"/>
+    </LinearLayout>
 </LinearLayout>

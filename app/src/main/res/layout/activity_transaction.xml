@@ -115,6 +115,26 @@
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/inputText"
+                        android:layout_weight="9"
+                        android:textIsSelectable="false"
+                        android:gravity="top" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOAD"
+                        android:id="@+id/load"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAVE"
+                        android:id="@+id/save"
+                        android:layout_weight="1" />
                 </FrameLayout>
             </LinearLayout>
         </LinearLayout>

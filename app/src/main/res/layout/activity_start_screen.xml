@@ -43,10 +43,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="45dp"
-                android:text="저금통 이름"
+                android:text=""
                 android:textColor="#000000"
                 android:textSize="23dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:id="@+id/title_txt"/>
 
             <!--            퍼센트 띄우는 달 이미지 버튼-->
 
@@ -69,7 +70,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="300dp"
-                android:text="목표 금액 : 700,000"
+                android:text="목표 금액 : "
+                android:id="@+id/max_num"
                 android:textColor="#000000"
                 android:textSize="23dp" />
 
@@ -79,7 +81,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="340dp"
-                android:text="현재 금액 : 140,000"
+                android:text="현재 금액 : "
+                android:id="@+id/now_num"
                 android:textColor="#000000"
                 android:textSize="23dp" />
         </FrameLayout>

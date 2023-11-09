@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    Button photo_btn, title_btn, start_btn;
+    Button title_btn, start_btn;
     EditText title_edt, max_edt;
 
     @Override
@@ -22,14 +22,6 @@ public class MainActivity extends AppCompatActivity {
         start_btn = findViewById(R.id.start_btn);
         title_edt = findViewById(R.id.title_edt);
         max_edt = findViewById(R.id.max_edt);
-
-        // 저금통 사진 넣고 완료
-//        photo_btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
 
         // 저금통 제목 넣고 완료
 //        title_btn.setOnClickListener(new View.OnClickListener() {

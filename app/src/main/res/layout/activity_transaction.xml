@@ -39,18 +39,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
-
-                <!--            프로필 -->
-                <ImageButton
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/activity_circle"
-                    android:elevation="100dp"
-                    android:padding="10dp"
-                    android:src="@drawable/profile" />
 
                 <!--        바탕 프레임-->
                 <FrameLayout

@@ -9,63 +9,29 @@
     android:background="#000957"
     android:layout_gravity="center">
 
-    <!--        헤더-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="돈 액수를 입력해주세요"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:textSize="25dp"/>
 
+    <EditText
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#fff"
+        android:layout_marginTop="50dp"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <Button
+        android:layout_width="241dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#8694B1"
+        android:text="완료"
+        android:textSize="20dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-
-            <!--        바탕 프레임-->
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginTop="-38dp"
-                android:background="@drawable/activity_radius"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="48dp"
-                    android:text="저금통 이름"
-                    android:textColor="#000000"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/inputText"
-                    android:layout_width="match_parent"
-                    android:layout_height="758dp"
-                    android:layout_weight="9"
-                    android:gravity="top"
-                    android:textIsSelectable="false" />
-
-                <Button
-                    android:id="@+id/load"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="LOAD" />
-
-                <Button
-                    android:id="@+id/save"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="SAVE" />
-            </FrameLayout>
-        </LinearLayout>
-
-    </ScrollView>
 </LinearLayout>

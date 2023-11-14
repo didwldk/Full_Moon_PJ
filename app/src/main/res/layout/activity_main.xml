@@ -44,7 +44,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="30dp"
                         android:gravity="top"
-                        android:text="2. 제목을 입력해주세요"
+                        android:text="1. 제목을 입력해주세요"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
@@ -76,7 +76,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="30dp"
                         android:gravity="top"
-                        android:text="3. 목표 금액을 작성해주세요"
+                        android:text="2. 목표 금액을 작성해주세요"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
